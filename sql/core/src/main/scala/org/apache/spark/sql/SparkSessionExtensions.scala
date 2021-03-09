@@ -279,7 +279,8 @@ class SparkSessionExtensions {
   }
 
   /**
-   * Injects a custom function into the [[TableFunctionRegistry]] at runtime for all sessions.
+   * Injects a custom function into the
+   * [[org.apache.spark.sql.catalyst.analysis.FunctionRegistry]] at runtime for all sessions.
    */
   def injectTableFunction(functionDescription: TableFunctionDescription): Unit = {
     injectedTableFunctions += functionDescription
